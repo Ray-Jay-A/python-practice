@@ -33,10 +33,3 @@ requests 用来给 API 发请求、把返回数据取回来；返回的是 Respo
 - `W5\` —— W5＝SQL 与 SQLite：`sql_demo.py`（建表/插入/查询）+ `sql_challenge.py`（Excel → SQLite → SQL）+ 复习题 `复习-D1.py` … `复习-D11.py`
 
 
-## 效果演示
-
-> 从字段混乱的原始 Excel，到运行一次脚本生成的结构化语料库。
-
->[原始数据](images/01-input-excel.png)
->[运行脚本](images/02-run.png)
->[生成的语料库](images/03-output.png)
