@@ -17,12 +17,21 @@ requests 用来给 API 发请求、把返回数据取回来；返回的是 Respo
 用到：requests.get / .json() / params / headers / requests.post / try-except / raise_for_status / json.dump 与 json.load
 产出：第一次调用 DeepSeek API（`code\W4\4-deepseek.py`）
 
+## W5 SQL 与 SQLite（读数据 → 存进数据库 → 用 SQL 查）
+
+- 在廖雪峰的在线 SQL 上练了：`SELECT` / `WHERE` / `ORDER BY` / `COUNT` / `AVG` / `GROUP BY` / `INSERT` / `UPDATE` / `DELETE`
+- 用 Python 自带的 `sqlite3`（不用装数据库）：`connect` / `cursor` / `execute` / `commit` / `fetchall`
+- 用 pandas 把 Excel 灌进数据库：`df.to_sql(...)`；再用 `pd.read_sql(...)` 读回来
+- 复现：`python sql_challenge.py` → 在 `工单.db` 里生成 `orders` 表，查出「每种退货原因各多少单」
+
 ## 文件一览
 - `W1\` —— W1 练习（`1-1.py` … `1-挑战.py`）
 - `W2\` —— W2 练习（`2-1.py` … `2-挑战.py`）+ 它产生的假数据（`退货原因.txt` / `工单描述.txt` / `工单记录.txt` / `统计结果.txt`）
 - `W3\` —— W3 练习（`3-1.py` … `3-挑战.py`）+ `3-柱状图.py` + 假数据（`工单数据.xlsx`）+ 产出（`退货原因统计报告.xlsx` / `退货原因柱状图.png`）
 - `W4\` —— W4＝调 API：`requests.get` / `.json()` / `params` / `try-except` / `json 存读`
 - `README.md` —— 本文件
+- `W5\` —— W5＝SQL 与 SQLite：`sql_demo.py`（建表/插入/查询）+ `sql_challenge.py`（Excel → SQLite → SQL）+ 复习题 `复习-D1.py` … `复习-D11.py`
+
 
 ## 效果演示
 
